@@ -1,0 +1,38 @@
+version: "3.1"
+
+rules:
+
+- rule: Say goodbye anytime the user says goodbye
+  steps:
+  - intent: goodbye
+  - action: utter_goodbye
+
+- rule: Say 'I am a bot' anytime the user challenges
+  steps:
+  - intent: bot_challenge
+  - action: utter_iamabot
+
+- rule: Responder siempre al saludo
+  steps:
+  - intent: saludo
+  - action: utter_saludo
+
+- rule: Responder sobre monumentos
+  steps:
+  - intent: preguntar_monumentos
+  - action: utter_preguntar_monumentos
+
+- rule: Responder sobre tapas
+  steps:
+  - intent: preguntar_tapas
+  - action: utter_preguntar_tapas
+
+- rule: Responder sobre horarios siempre
+  steps:
+  - intent: preguntar_horario
+  - action: utter_horario
+
+- rule: Dar consejo turístico
+  steps:
+  - intent: pedir_consejo
+  - action: utter_consejo

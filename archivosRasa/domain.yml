@@ -1,0 +1,58 @@
+version: "3.1"
+
+intents:
+  - greet
+  - goodbye
+  - affirm
+  - deny
+  - mood_great
+  - mood_unhappy
+  - bot_challenge
+  - saludo
+  - preguntar_monumentos
+  - preguntar_tapas
+  - preguntar_horario
+  - preguntar_tour
+  - pedir_consejo
+
+responses:
+  utter_greet:
+  - text: "Hey! How are you?"
+
+  utter_cheer_up:
+  - text: "Here is something to cheer you up:"
+    image: "https://i.imgur.com/nGF1K8f.jpg"
+
+  utter_did_that_help:
+  - text: "Did that help you?"
+
+  utter_happy:
+  - text: "Great, carry on!"
+
+  utter_goodbye:
+  - text: "Bye"
+
+  utter_iamabot:
+  - text: "I am a bot, powered by Rasa."
+
+  utter_saludo:
+  - text: "¡Hola! Bienvenido a tu asistente de Sevilla. 💃 ¿En qué puedo ayudarte?"
+
+  utter_preguntar_monumentos:
+  - text: "Sevilla tiene maravillas como la Giralda, la Catedral, el Real Alcázar y la Plaza de España. ¡No te las puedes perder!"
+
+  utter_preguntar_tapas:
+  - text: "Para tapear, te recomiendo la zona de Triana o el barrio de Santa Cruz. ¡Tienes que probar el adobo y el montadito de pringá!"
+
+  utter_horario:
+  - text: "La mayoría de monumentos abren de 10:00 a 19:00. La Catedral suele cerrar los domingos por la mañana para misa."
+
+  utter_info_tour:
+  - text: "Te recomiendo el tour 'Esencia de Sevilla': empieza en la Catedral, sigue por Santa Cruz y termina en el río al atardecer."
+
+  utter_consejo:
+  - text: "Un consejo: Compra las entradas online con antelación y lleva siempre agua, ¡el sol de Sevilla no perdona!"
+
+session_config:
+  session_expiration_time: 60
+  carry_over_slots_to_new_session: true
