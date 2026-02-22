@@ -1,6 +1,10 @@
 const RASA_URL =
 	'https://super-guide-5g5vw4rv46pxhp767-5005.app.github.dev/webhooks/rest/webhook';
 
+//const RASA_URL =
+//	'http://10.0.2.2:5005/webhooks/rest/webhook';
+	//http://localhost:5005/webhooks/rest/webhook
+
 //automatica https://refactored-space-dollop-r4qvrgr5wr4wh55pj-5005.app.github.dev/webhooks/rest/webhook
 //nuestro nuevo https://studious-parakeet-pj4qgrg59pgwh9954-5005.app.github.dev/webhooks/rest/webhook
 
